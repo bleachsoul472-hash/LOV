@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فعالية VIZARD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔥 البداية -->
+<div id="startScreen" class="screen">
+  <h1>🔥 فعالية VIZARD</h1>
+  <p>اضغط ابدأ للدخول</p>
+  <button onclick="startQuiz()">ابدأ</button>
+</div>
+
+<!-- 🎮 الكويز -->
+<div id="quizScreen" class="screen" style="display:none;">
+
+  <img id="questionImg">
+
+  <h2 id="questionText"></h2>
+
+  <div id="options"></div>
+
+  <p id="result"></p>
+
+  <button onclick="nextQuestion()">التالي ➜</button>
+
+</div>
+
+<!-- 🏁 النهاية -->
+<div id="endScreen" class="screen" style="display:none;">
+
+  <div class="box">
+    <h1>🏆 انتهت الفعالية</h1>
+    <h2 id="scoreText"></h2>
+    <p id="message"></p>
+
+    <button onclick="restartQuiz()">إعادة اللعب 🔄</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
