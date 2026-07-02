@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOV فعالية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔥 البداية -->
+<div class="start" id="startScreen">
+  <h1>🔥LOV فعالية </h1>
+  <p>اضغط ابدأ للدخول</p>
+  <button onclick="startQuiz()">ابدأ</button>
+</div>
+
+<!-- 🎮 الكويز -->
+<div class="quiz" id="quizScreen">
+
+  <h2 id="questionText"></h2>
+
+  <img id="questionImg">
+
+  <div id="options"></div>
+
+  <p id="result"></p>
+<!-- 🏁 شاشة النهاية -->
+<div class="end" id="endScreen" style="display:none;">
+
+  <div class="end-box">
+
+    <h1>🏆 انتهت الفعالية</h1>
+
+    <p>نتيجتك النهائية</p>
+
+    <h2 id="scoreText">0 / 0</h2>
+
+    <p id="message"></p>
+
+    <button onclick="restartQuiz()">🔄 إعادة اللعب</button>
+
+  </div>
+
+</div>
+  <button onclick="nextQuestion()">التالي ➜</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
